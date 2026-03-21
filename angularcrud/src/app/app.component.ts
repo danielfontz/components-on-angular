@@ -12,6 +12,6 @@ import { FooterComponent } from "./shared/footer/footer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = `Working with Angular`;
-  name = "Daniel" // <- Put your name here!
+  title = `Learning Angular`;
+  name = "guy!" // <- Put your name here!
 }
