@@ -1,6 +1,24 @@
 h1{
-    font-size: 5em;
-}
-h2{
     font-size: 3em;
+}
+
+.simple-input, .submit-input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.submit-input{
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
 }

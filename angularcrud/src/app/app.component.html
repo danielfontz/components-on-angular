@@ -1,5 +1,18 @@
 <app-header></app-header>
-<h1>{{title}}</h1>
-<h2>Hello {{name}}</h2>
+<div>
+    <h1>{{ title }}</h1>
+    <p>{{ name }}</p>
+    <label for="name">Name:</label>
+        <input type="text" class="simple-input" id="name" name="name" placeholder="Input your name:">
+        
+
+
+    <button [disabled]="disabledButton" (click)="onButtonClick()">
+        {{ buttonText }}
+    </button>
+    @if(message){
+        <div>{{ message }}</div>
+    }
+</div>
 <app-footer></app-footer>
 <router-outlet />

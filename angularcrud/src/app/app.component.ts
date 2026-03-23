@@ -13,5 +13,12 @@ import { FooterComponent } from "./shared/footer/footer.component";
 })
 export class AppComponent {
   title = `Learning Angular`;
-  name = "guy!" // <- Put your name here!
+  name = "Daniel" // <- Put your name here!
+  buttonText: string = "Click me!";
+  disabledButton: boolean = false;
+  message: string = "";
+
+  onButtonClick() {
+    this.message = "Button was clicked!";
+  }
 }

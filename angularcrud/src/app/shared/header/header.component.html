@@ -1,19 +1,14 @@
 <nav class="navbar">
     <div class="navbar-container">
-        <a class="navbar-logo" href="/">AngularCrud Header</a>
-        <ul class="navbar-list">
-            <li class="navbar-item">
-                <a href="/">Home</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Cadastro</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Login</a>
-            </li>
-            <li class="navbar-item">
-                <a href="">Sobre</a>
-            </li>
-        </ul>
+        @if (showLogo) {
+            <a class="navbar-logo" href="/">AngularCrud Header</a>
+            <ul class="navbar-list">
+                @for (item of menuItems; track item) {
+                    <li class="navbar-item">
+                        <a>{{item.label}}</a>
+                    </li>
+                }
+            </ul>
+        }
     </div>
 </nav>

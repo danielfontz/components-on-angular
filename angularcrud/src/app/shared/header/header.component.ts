@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  showLogo:boolean = true;
+  menuItems = [
+    { label: 'Home', link: '' },
+    { label: 'Sign Up', link: '/profile/include' },
+    { label: 'Login', link: '/profile/login' },
+    { label: 'About', link: '/about' },
+    { label: 'Help', link: '/help' }
+  ];
 }
